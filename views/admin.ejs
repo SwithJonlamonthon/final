@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Lottery9999</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="/public/assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/public/css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-light bg-light static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#!">ADMIN Lottery9999</a>
+                <form action="/" method="GET"><button class="btn btn-primary" type="submit">Home</button></form>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="text-center text-white">
+                            <!-- Page heading-->
+                            <h1 class="mb-5">ADD lottery prize here</h1>
+                            <% if(typeof(msg) != "undefined"){ %>
+                            <h2><%= msg %></h2>
+                            <% } %>
+                            <form class="form-subscribe" id="contactForm" action="/admin" method="POST">
+                                <fieldset>
+                                <div class="row">
+                                    <div class="col">
+                                        <input class="form-control form-control-lg" id="value" type="text" placeholder="Lotterynumber" name="Lottery_number_add" style="margin-bottom: 4px;" >
+                                    </div>
+                                   
+                                </div>
+                                <select class="form-control form-control-lg" name="Lottery_number_date" id="prize"  style="margin-bottom: 4px;">
+                                    <option value="2022/03/16">2022-03-16</option>
+                                    <option value="2022/04/01">2022-04-01</option>
+                                    <option value="2022/04/16">2022-04-16</option>
+                                </select>
+                                <select class="form-control form-control-lg" name="Lottery_number_type" id="prize" style="margin-bottom: 10px;">
+                                    <option value= "first">First prize</option>
+                                    <option value= "second">Second prize(Last 3 digits)</option>
+                                    <option value= "third">Third prize</option>
+                                </select>
+                                <div class="col-auto"><button class="btn btn-primary btn-lg enable" id="submitButton" type="submit">Submit</button></div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Footer-->
+        <footer class="footer bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                        <ul class="list-inline mb-2">
+                            
+                            <li class="list-inline-item"><form action="/credit"method="get"><button style="border:none;">About</button></form></li>
+                        </ul>
+                        <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2022. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+                        <ul class="list-inline mb-0">
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="/public/js/scripts.js" type="module"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+      
+    </body>
+</html>
