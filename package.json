@@ -16,7 +16,7 @@
   "description": "Swith is Final",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha spec"
   },
   "author": "Swith Jonlamonthon",
   "license": "ISC"
