@@ -16,7 +16,7 @@
   "description": "Swith is Final",
   "main": "app.js",
   "scripts": {
-    "test": "mocha spec"
+    "test": "mocha"
   },
   "author": "Swith Jonlamonthon",
   "license": "ISC"
